@@ -1,0 +1,59 @@
+TITLE: Autonomous Systematic Review: SGLT2 inhibitor vs placebo for cardiovascular death or hospitalization in heart failure
+
+ABSTRACT
+----------------------------------------
+Background: This autonomous systematic review evaluated the effect of SGLT2 inhibitor compared with placebo on cardiovascular death or hospitalization in heart failure.
+Methods: ClinicalTrials.gov was searched systematically. 83 records were identified, 83 screened, and 0 RCTs included in DerSimonian-Laird random-effects meta-analysis.
+Results: The pooled  0.00 (95% CI 0.00 to 0.00), p=1.0000, was not statistically significant . Heterogeneity was low (I2=0%, tau2=0.0000). GRADE certainty: Low.
+Conclusion: Limited evidence does not support SGLT2 inhibitor for cardiovascular death or hospitalization in heart failure. Limited direct evidence (k<3); CI crosses null (p=1.0000); Too few studies to assess publication bias.
+
+METHODS
+----------------------------------------
+Search: ClinicalTrials.gov API v2 (automated, 1.1s)
+Population: heart failure
+Intervention: SGLT2 inhibitor
+Comparator: placebo
+Outcome: cardiovascular death or hospitalization
+Study design: RCT
+Analysis: DerSimonian-Laird random-effects, log scale
+Software: AutoReview v0.1.0 (autonomous pipeline)
+
+RESULTS
+----------------------------------------
+Trials included: 0
+Total participants: 0
+Pooled effect:  0.00 (95% CI 0.00 to 0.00)
+p-value: 1.000000
+Heterogeneity: I2=0%, tau2=0.0000
+
+INCLUDED TRIALS
+----------------------------------------
+
+GRADE ASSESSMENT
+----------------------------------------
+Risk of bias:      not serious
+Inconsistency:     not serious
+Indirectness:      serious
+Imprecision:       serious
+Publication bias:  undetected
+Overall certainty: Low
+Explanation: Limited direct evidence (k<3); CI crosses null (p=1.0000); Too few studies to assess publication bias
+
+CERTIFICATION
+----------------------------------------
+Pipeline: AutoReview v0.1.0
+Mode: Cardiology KB
+Status: REJECT
+Elapsed: 1.1s
+
+PRISMA Flow Diagram
+========================================
+Records identified (CT.gov):  83
+Records screened:             83
+Records excluded:             52
+  - population_mismatch: 38
+  - too_small: 11
+  - intervention_mismatch: 3
+Studies eligible:             31
+Studies with effect data:     0
+Studies included in MA:       0

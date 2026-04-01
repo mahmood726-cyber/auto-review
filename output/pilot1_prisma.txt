@@ -1,0 +1,11 @@
+PRISMA Flow Diagram
+========================================
+Records identified (CT.gov):  83
+Records screened:             83
+Records excluded:             52
+  - population_mismatch: 38
+  - too_small: 11
+  - intervention_mismatch: 3
+Studies eligible:             31
+Studies with effect data:     2
+Studies included in MA:       2

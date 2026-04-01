@@ -1,0 +1,58 @@
+TITLE: Autonomous Systematic Review: PCSK9 inhibitor vs placebo for major adverse cardiovascular events in cardiovascular disease
+
+ABSTRACT
+----------------------------------------
+Background: This autonomous systematic review evaluated the effect of PCSK9 inhibitor compared with placebo on major adverse cardiovascular events in cardiovascular disease.
+Methods: ClinicalTrials.gov was searched systematically. 85 records were identified, 85 screened, and 0 RCTs included in DerSimonian-Laird random-effects meta-analysis.
+Results: The pooled  0.00 (95% CI 0.00 to 0.00), p=1.0000, was not statistically significant . Heterogeneity was low (I2=0%, tau2=0.0000). GRADE certainty: Low.
+Conclusion: Limited evidence does not support PCSK9 inhibitor for major adverse cardiovascular events in cardiovascular disease. Limited direct evidence (k<3); CI crosses null (p=1.0000); Too few studies to assess publication bias.
+
+METHODS
+----------------------------------------
+Search: ClinicalTrials.gov API v2 (automated, 0.4s)
+Population: cardiovascular disease
+Intervention: PCSK9 inhibitor
+Comparator: placebo
+Outcome: major adverse cardiovascular events
+Study design: RCT
+Analysis: DerSimonian-Laird random-effects, log scale
+Software: AutoReview v0.1.0 (autonomous pipeline)
+
+RESULTS
+----------------------------------------
+Trials included: 0
+Total participants: 0
+Pooled effect:  0.00 (95% CI 0.00 to 0.00)
+p-value: 1.000000
+Heterogeneity: I2=0%, tau2=0.0000
+
+INCLUDED TRIALS
+----------------------------------------
+
+GRADE ASSESSMENT
+----------------------------------------
+Risk of bias:      not serious
+Inconsistency:     not serious
+Indirectness:      serious
+Imprecision:       serious
+Publication bias:  undetected
+Overall certainty: Low
+Explanation: Limited direct evidence (k<3); CI crosses null (p=1.0000); Too few studies to assess publication bias
+
+CERTIFICATION
+----------------------------------------
+Pipeline: AutoReview v0.1.0
+Mode: Registry-first
+Status: REJECT
+Elapsed: 0.4s
+
+PRISMA Flow Diagram
+========================================
+Records identified (CT.gov):  85
+Records screened:             85
+Records excluded:             85
+  - intervention_mismatch: 84
+  - too_small: 1
+Studies eligible:             0
+Studies with effect data:     0
+Studies included in MA:       0

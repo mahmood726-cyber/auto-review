@@ -1,0 +1,29 @@
+[
+  {
+    "label": "NCT03057977",
+    "title": "EMPagliflozin outcomE tRial in Patients With chrOnic heaRt F",
+    "yi": -0.2877,
+    "ci_lo": -0.4277,
+    "ci_hi": -0.1477,
+    "weight": 196.06,
+    "n": 3730
+  },
+  {
+    "label": "NCT03036124",
+    "title": "Study to Evaluate the Effect of Dapagliflozin on the Inciden",
+    "yi": -0.3011,
+    "ci_lo": -0.4352,
+    "ci_hi": -0.167,
+    "weight": 213.52,
+    "n": 4744
+  },
+  {
+    "label": "Summary",
+    "title": "RE Model (k=2)",
+    "yi": -0.2947,
+    "ci_lo": -0.3915,
+    "ci_hi": -0.1978,
+    "weight": null,
+    "n": 8474
+  }
+]

@@ -1,0 +1,57 @@
+TITLE: Autonomous Systematic Review: GLP-1 receptor agonist vs placebo for weight loss in obesity
+
+ABSTRACT
+----------------------------------------
+Background: This autonomous systematic review evaluated the effect of GLP-1 receptor agonist compared with placebo on weight loss in obesity.
+Methods: ClinicalTrials.gov was searched systematically. 93 records were identified, 93 screened, and 0 RCTs included in DerSimonian-Laird random-effects meta-analysis.
+Results: The pooled  0.00 (95% CI 0.00 to 0.00), p=1.0000, was not statistically significant . Heterogeneity was low (I2=0%, tau2=0.0000). GRADE certainty: Low.
+Conclusion: Limited evidence does not support GLP-1 receptor agonist for weight loss in obesity. Limited direct evidence (k<3); CI crosses null (p=1.0000); Too few studies to assess publication bias.
+
+METHODS
+----------------------------------------
+Search: ClinicalTrials.gov API v2 (automated, 0.4s)
+Population: obesity
+Intervention: GLP-1 receptor agonist
+Comparator: placebo
+Outcome: weight loss
+Study design: RCT
+Analysis: DerSimonian-Laird random-effects, log scale
+Software: AutoReview v0.1.0 (autonomous pipeline)
+
+RESULTS
+----------------------------------------
+Trials included: 0
+Total participants: 0
+Pooled effect:  0.00 (95% CI 0.00 to 0.00)
+p-value: 1.000000
+Heterogeneity: I2=0%, tau2=0.0000
+
+INCLUDED TRIALS
+----------------------------------------
+
+GRADE ASSESSMENT
+----------------------------------------
+Risk of bias:      not serious
+Inconsistency:     not serious
+Indirectness:      serious
+Imprecision:       serious
+Publication bias:  undetected
+Overall certainty: Low
+Explanation: Limited direct evidence (k<3); CI crosses null (p=1.0000); Too few studies to assess publication bias
+
+CERTIFICATION
+----------------------------------------
+Pipeline: AutoReview v0.1.0
+Mode: Registry-first
+Status: REJECT
+Elapsed: 0.4s
+
+PRISMA Flow Diagram
+========================================
+Records identified (CT.gov):  93
+Records screened:             93
+Records excluded:             93
+  - intervention_mismatch: 93
+Studies eligible:             0
+Studies with effect data:     0
+Studies included in MA:       0

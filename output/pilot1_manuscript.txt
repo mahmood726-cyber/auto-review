@@ -1,0 +1,49 @@
+TITLE: Autonomous Systematic Review: SGLT2 inhibitor vs placebo for cardiovascular death or heart failure hospitalization in heart failure
+
+ABSTRACT
+----------------------------------------
+Background: This autonomous systematic review evaluated the effect of SGLT2 inhibitor compared with placebo on cardiovascular death or heart failure hospitalization in heart failure.
+Methods: ClinicalTrials.gov was searched systematically. 83 records were identified, 83 screened, and 2 RCTs included in DerSimonian-Laird random-effects meta-analysis.
+Results: The pooled HR 0.74 (95% CI 0.68 to 0.82), p=0.0000, was statistically significant favoring SGLT2 inhibitor. Heterogeneity was low (I2=0%, tau2=0.0000). GRADE certainty: Low.
+Conclusion: Limited evidence supports SGLT2 inhibitor for cardiovascular death or heart failure hospitalization in heart failure. All trials industry-sponsored (potential bias); Limited direct evidence (k<3); Too few studies to assess publication bias.
+
+METHODS
+----------------------------------------
+Search: ClinicalTrials.gov API v2 (automated, 0.4s)
+Population: heart failure
+Intervention: SGLT2 inhibitor
+Comparator: placebo
+Outcome: cardiovascular death or heart failure hospitalization
+Study design: RCT
+Analysis: DerSimonian-Laird random-effects, log scale
+Software: AutoReview v0.1.0 (autonomous pipeline)
+
+RESULTS
+----------------------------------------
+Trials included: 2
+Total participants: 0
+Pooled effect: HR 0.74 (95% CI 0.68 to 0.82)
+p-value: 0.000000
+Heterogeneity: I2=0%, tau2=0.0000
+
+INCLUDED TRIALS
+----------------------------------------
+  NCT03057977 | EMPagliflozin outcomE tRial in Patients With chrOn | N=3730 | Effect=0.75
+  NCT03036124 | Study to Evaluate the Effect of Dapagliflozin on t | N=4744 | Effect=0.74
+
+GRADE ASSESSMENT
+----------------------------------------
+Risk of bias:      serious
+Inconsistency:     not serious
+Indirectness:      serious
+Imprecision:       not serious
+Publication bias:  undetected
+Overall certainty: Low
+Explanation: All trials industry-sponsored (potential bias); Limited direct evidence (k<3); Too few studies to assess publication bias
+
+CERTIFICATION
+----------------------------------------
+Pipeline: AutoReview v0.1.0
+Mode: Cardiology KB
+Status: WARN
+Elapsed: 0.4s
