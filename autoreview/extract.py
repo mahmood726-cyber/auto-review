@@ -133,9 +133,16 @@ CARDIO_KB = {
 }
 
 
-def extract_from_kb(trial):
-    """Try to extract effect size from curated knowledge base."""
+def extract_from_kb(trial, fuzzy_matches=None):
+    """Try to extract effect size from curated knowledge base.
+
+    First tries exact NCT ID match, then falls back to fuzzy title match
+    using the MetaSprint Cardio Universe identity engine pattern.
+    """
     entry = CARDIO_KB.get(trial.nct_id)
+    if entry is None and fuzzy_matches and trial.nct_id in fuzzy_matches:
+        kb_key, score = fuzzy_matches[trial.nct_id]
+        entry = CARDIO_KB.get(kb_key)
     if entry is None:
         return trial
 
@@ -184,14 +191,23 @@ def extract_from_registry(trial):
 def extract_effects(trials, use_kb=True):
     """Extract effect sizes from all trials.
 
+    Uses exact NCT ID match first, then fuzzy title matching (Jaccard + aliases)
+    ported from MetaSprint Cardio Universe identity engine.
+
     Returns (extracted, unextracted) — trials with/without effect data.
     """
+    # Build fuzzy matches for all trials at once (prevents duplicate KB assignments)
+    fuzzy_matches = {}
+    if use_kb:
+        from autoreview.matcher import match_all_trials
+        fuzzy_matches = match_all_trials(trials, CARDIO_KB)
+
     extracted = []
     unextracted = []
 
     for trial in trials:
         if use_kb:
-            trial = extract_from_kb(trial)
+            trial = extract_from_kb(trial, fuzzy_matches=fuzzy_matches)
 
         if trial.effect_size is not None and trial.se is not None and trial.se > 0:
             extracted.append(trial)
