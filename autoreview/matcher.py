@@ -3,7 +3,7 @@
 Uses Jaccard token-set similarity + trial acronym alias dictionary to match
 CT.gov records to the knowledge base when NCT IDs don't match directly.
 
-Source pattern: C:/Projects/metasprint-cardio-universe/src/engine/identity/similarity.js
+Source pattern: metasprint-cardio-universe identity similarity engine
 """
 import re
 from autoreview.models import TrialRecord
