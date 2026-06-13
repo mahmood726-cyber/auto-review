@@ -13,8 +13,13 @@ def pool_dl(trials):
     if k == 0:
         return PooledResult(k=0)
 
+    # SE floor guards against division-by-zero from a zero/None standard error
+    # (e.g. a trial with effect data but no usable variance). The pipeline
+    # already filters se>0 before pooling, but pool_dl is also a public entry
+    # point and must not raise on a degenerate input.
+    SE_FLOOR = 1e-6
     yi = [t.effect_size for t in trials]
-    vi = [t.se ** 2 for t in trials]
+    vi = [max(t.se or 0.0, SE_FLOOR) ** 2 for t in trials]
 
     # Fixed-effect estimate
     w_fe = [1.0 / v for v in vi]

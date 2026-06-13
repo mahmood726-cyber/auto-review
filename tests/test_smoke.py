@@ -2,9 +2,26 @@ from pathlib import Path
 
 from autoreview.models import PICOQuery, TrialRecord
 from autoreview.pipeline import run_autoreview
+from autoreview.pool import pool_dl
 
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def test_pool_dl_zero_se_does_not_crash():
+    """A degenerate trial with se=0 must not raise ZeroDivisionError."""
+    trials = [
+        TrialRecord(nct_id="A", title="A", effect_size=-0.3, se=0.0, measure="logHR"),
+        TrialRecord(nct_id="B", title="B", effect_size=-0.2, se=0.1, measure="logHR"),
+    ]
+    pooled = pool_dl(trials)
+    assert pooled.k == 2
+    assert pooled.se >= 0
+
+
+def test_pool_dl_empty_returns_k_zero():
+    pooled = pool_dl([])
+    assert pooled.k == 0
 
 
 def test_package_artifacts_present():
